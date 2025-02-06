@@ -1,6 +1,6 @@
 # Tasty Challenge
 
-A simple Rails application with Grape and ActiveAdmin
+A simple Rails application with Grape and ActiveAdmin.
 
 Things you may want to cover:
 
