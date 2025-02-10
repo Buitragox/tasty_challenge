@@ -2,22 +2,47 @@
 
 A simple Rails application with Grape and ActiveAdmin.
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+Install the ruby version specified in the `.ruby_version` file, preferably using a version manager. Some options: 
+   - [asdf](https://asdf-vm.com/)
+   - [rbenv](https://github.com/rbenv/rbenv)
 
-* System dependencies
+## How to run
 
-* Configuration
+To run the application in a local environment, follow these steps:
 
-* Database creation
+1. Clone the repository
 
-* Database initialization
+```shell
+git clone https://github.com/Buitragox/tasty_challenge.git
+```
 
-* How to run the test suite
+2. Install the gems
 
-* Services (job queues, cache servers, search engines, etc.)
+```shell
+bundle install
+```
 
-* Deployment instructions
+3. Set up the database
 
-* ...
+```shell
+bundle exec rails db:prepare
+```
+
+4. Run the server
+
+```shell
+bundle exec rails server
+```
+
+The app should be running in `127.0.0.1:3000`.
+
+## Test suite
+
+This project uses [RSpec](https://rspec.info). To run all tests use:
+
+```shell
+bundle exec rspec
+```
+Check [rspec-rails](https://github.com/rspec/rspec-rails) for more examples and information.
