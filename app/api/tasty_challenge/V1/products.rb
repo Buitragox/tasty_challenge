@@ -25,7 +25,7 @@ module TastyChallenge::V1
         use :product
       end
       post do
-        product = Product.create!(**declared(params))
+        Product.create!(**declared(params))
       end
 
       route_param :id, type: Integer do
@@ -37,7 +37,9 @@ module TastyChallenge::V1
           use :product
         end
         put do
-          Product.find(params[:id]).update!(**declared(params))
+          product = Product.find(params[:id])
+          product.update!(**declared(params))
+          product
         end
 
         delete do
