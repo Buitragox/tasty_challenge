@@ -161,7 +161,7 @@ GEM
       raabro (~> 1.4)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    grape (2.2.0)
+    grape (2.3.0)
       activesupport (>= 6)
       dry-types (>= 1.1)
       mustermann-grape (~> 1.1.0)
@@ -485,7 +485,7 @@ DEPENDENCIES
   devise (~> 4.9)
   factory_bot_rails (~> 6.4)
   faker (~> 3.5)
-  grape (~> 2.2)
+  grape (~> 2.3)
   grape-swagger (~> 2.1)
   importmap-rails
   jbuilder

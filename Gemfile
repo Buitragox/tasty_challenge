@@ -18,7 +18,7 @@ gem 'kamal', require: false
 gem 'thruster', require: false
 
 # Added gems
-gem 'grape', '~> 2.2'
+gem 'grape', '~> 2.3'
 gem 'devise', '~> 4.9'
 gem 'activeadmin', '4.0.0.beta15'
 gem 'cssbundling-rails', '~> 1.4'
