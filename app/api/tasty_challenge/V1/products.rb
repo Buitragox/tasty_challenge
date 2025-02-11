@@ -11,7 +11,8 @@ module TastyChallenge::V1
     helpers do
       params :product do
         requires :name, type: String, desc: 'Product name (between 3 and 150 characters)'
-        requires :price, type: [BigDecimal, String], desc: 'Product price (a positive number with up to 3 decimal places)'
+        requires :price, types: [BigDecimal, String],
+                 desc: 'Product price (a positive number with up to 3 decimal places)'
         requires :stock, type: Integer, desc: 'Product stock (a positive integer)'
       end
     end
