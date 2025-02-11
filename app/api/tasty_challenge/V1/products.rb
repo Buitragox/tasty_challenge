@@ -10,9 +10,9 @@ module TastyChallenge::V1
 
     helpers do
       params :product do
-        requires :name, type: String
-        requires :price, type: BigDecimal
-        requires :stock, type: Integer
+        requires :name, type: String, desc: "Product name"
+        requires :price, type: BigDecimal, desc: "Product price (a positive number with up to 3 decimal places)"
+        requires :stock, type: Integer, desc: "Product stock"
       end
     end
 

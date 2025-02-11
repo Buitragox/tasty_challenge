@@ -16,6 +16,9 @@ gem 'bootsnap', require: false
 gem 'kamal', require: false
 gem 'thruster', require: false
 gem 'grape', '~> 2.2'
+gem 'devise', '~> 4.9'
+gem 'activeadmin', '4.0.0.beta15'
+gem 'cssbundling-rails', '~> 1.4'
 
 group :development, :test do
   gem 'debug', platforms: %i[ mri windows ], require: 'debug/prelude'
